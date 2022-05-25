@@ -1,0 +1,26 @@
+.card-character{
+    width: 18rem;
+}
+.container-characters{
+    margin: 3rem 2rem 6rem 2rem;
+}
+.pagination{
+    margin-left: 40%;
+}
+.card-content{
+    color: white;
+    background-color: #381641;
+    opacity: 0.75;
+    overflow: hidden;
+    max-height: 120px;
+    /* box-shadow: 3px 3px 5px rgb(48, 47, 47); */
+}
+.link-link{
+    color: #000000;
+    text-decoration: none;
+}
+.link-link:hover{
+    text-decoration: underline;
+    transition: 2s;
+    color: #fffafa;
+}

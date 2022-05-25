@@ -1,0 +1,22 @@
+.div-search{
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    margin-top: 3rem;
+    margin-left: 30%;
+}
+.input-search{
+    color: #381641;   
+    background-color: #a379ad;
+    border-radius: 5px;
+    width: 100%;
+    border: 2px solid #381641;
+    
+}
+.input-search:focus{
+    outline: none;
+}
+.input-search::placeholder{
+    color: #381641;
+    opacity: 0.8;
+}
