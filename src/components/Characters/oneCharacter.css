@@ -1,0 +1,25 @@
+.container-card{
+    margin: 7rem 2rem 6rem 2rem;
+    width: 70vw;
+    
+}
+.div-purple{
+    background-color: #381641;
+    border: 2px solid #381641;
+}
+.list-item{
+    list-style-type: none;
+}
+.p-c{
+    color: #381641;
+    font-weight: bold;
+}
+.btn-purple-out{
+    background-color: #623fa3;
+    color: white;
+}
+.btn-purple-out:hover{
+    color: white;
+    background-color: #492d7c;
+    transition: 2s;
+}

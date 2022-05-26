@@ -8,7 +8,7 @@ import Navbar from '../NavBar/Navbar';
 import Pagination from '../Pagination/Pagination';
 import Hero from '../Home/Hero';
 //Images
-import background2 from '../../assets/background-2.jpg';
+import rickMortyCamp from '../../assets/rickMortyCamp.jpg';
 import './characters.css';
 //AOS
 import AOS from 'aos';
@@ -59,7 +59,7 @@ const Characters = () => {
     return ( 
         <div className='animate__animated animate__fadeIn'>
             <Navbar />   
-            <Hero imageSrc={background2} tittle={'Characters fandom'} />    
+            <Hero imageSrc={rickMortyCamp} tittle={'Characters _______'} />    
             <SearchBar name={search} handleInput={handleInputChange}/>
             <div className='container-characters'>
                 <div 
@@ -86,16 +86,22 @@ const Characters = () => {
                     )}
                 </div>
             </div>
-            <div className='pagination'>
-                <Pagination
-                    pageNumber={pageNumber}
-                    prevPage={prevPage}
-                    nextPage={nextPage}
-                    selectPage1={selectPage1}
-                    selectPage2={selectPage2}
-                    selectPage3={selectPage3}
-                />
-            </div>
+            {
+                search === '' ? (
+                    <div className='pagination'>
+                            <Pagination
+                            pageNumber={pageNumber}
+                            prevPage={prevPage}
+                            nextPage={nextPage}
+                            selectPage1={selectPage1}
+                            selectPage2={selectPage2}
+                            selectPage3={selectPage3}
+                            />
+                    </div>
+                    ) : (
+                        <h1>Waiting for connection...</h1>
+                    )
+            }
         </div>
      );
 }

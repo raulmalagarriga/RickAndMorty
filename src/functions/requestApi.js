@@ -17,4 +17,8 @@ const getDinamicCharacters = async(setSearch , inputValue) => {
     })
     setSearch(request.data.results);
 }
-export {allCharacters , getDinamicCharacters};
+const getOneCharacter = async(id , setCharacter) => { 
+    const request = await axios.get(`https://rickandmortyapi.com/api/character/${id}`);
+    setCharacter(request);
+}
+export {allCharacters , getDinamicCharacters , getOneCharacter};

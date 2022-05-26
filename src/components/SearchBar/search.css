@@ -11,10 +11,12 @@
     border-radius: 5px;
     width: 100%;
     border: 2px solid #381641;
-    
+    transition: 1s;
 }
 .input-search:focus{
     outline: none;
+    background-color: #705277;
+    transition: 1s;
 }
 .input-search::placeholder{
     color: #381641;
