@@ -6,9 +6,16 @@ import Hero from './Hero';
 import Navbar from '../NavBar/Navbar';
 import Slider from "./Slider";
 import '../../App.css';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-
+    const navigate = useNavigate();
+    const toCharacter = () => {
+      navigate('/characters');
+    }
+    const toChapters = () => {
+      navigate('/chapters');
+    }
   return (
     <div className='App animate__animated animate__fadeIn'>
       <Navbar/>
@@ -19,12 +26,14 @@ const Home = () => {
         subtitle={
           "Search all characters of Rick & Morty!"
         }
+        toWhere={toCharacter}
       />
       <Slider
         imageSrc={travelRickMorty}
         title={"Chapters"}
         subtitle={"All the chapters' info are here!"}
         flipped={true}
+        toWhere={toChapters}
       />
     </div>
   );

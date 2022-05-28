@@ -81,7 +81,7 @@ const Characters = () => {
                         ))
                     ) : (
                         <>
-                            <h1>Loading...</h1>
+                            <h1>Waiting for connection...</h1>
                         </>
                     )}
                 </div>
@@ -99,7 +99,7 @@ const Characters = () => {
                             />
                     </div>
                     ) : (
-                        <h1>Waiting for connection...</h1>
+                        <></>
                     )
             }
         </div>

@@ -15,7 +15,7 @@ const Pagination = ({
                 <ul className='pagination'>
                     <li className='page-item'>
                         <button className='btn btn-purple' onClick={prevPage}>
-                            prev.
+                            Prev.
                         </button>
                     </li>
                     <li className='page-item'>
@@ -35,7 +35,7 @@ const Pagination = ({
                     </li>
                     <li className='page-item'>
                         <button className='btn btn-purple' onClick={nextPage}>
-                            next.
+                            Next.
                         </button>
                     </li>
                 </ul>

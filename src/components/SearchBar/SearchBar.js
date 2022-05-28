@@ -11,6 +11,8 @@ const SearchBar = ({name , handleInput}) => {
             className='input-search'
             value={name}
             onChange={handleInput}
+            autoComplete='off'
+            autoFocus
         />
     </div> 
     );
