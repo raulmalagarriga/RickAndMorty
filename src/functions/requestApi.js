@@ -21,4 +21,10 @@ const getOneCharacter = async(id , setCharacter) => {
     const request = await axios.get(`https://rickandmortyapi.com/api/character/${id}`);
     setCharacter(request);
 }
-export {allCharacters , getDinamicCharacters , getOneCharacter};
+const getAllChapters = async(setChapters , pageNumber) => {
+    const request = await axios.get(`https://rickandmortyapi.com/api/episode?page=${pageNumber}`);
+    setChapters(request.data.results);
+
+}
+
+export {allCharacters , getDinamicCharacters , getOneCharacter , getAllChapters};

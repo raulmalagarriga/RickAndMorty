@@ -12,6 +12,7 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
+      <span className="navbar__logo">R&M Wiki</span>
       {menuClicked ? (
         <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
       ) : (

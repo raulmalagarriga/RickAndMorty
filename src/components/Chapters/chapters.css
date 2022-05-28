@@ -1,0 +1,15 @@
+.container-chapters{
+    margin: 3rem 2rem 6rem 2rem;
+}
+.card-cha{
+    width: 18rem;
+}
+.link-link1{
+    color: #fffafa;
+    text-decoration: none;
+}
+.link-link1:hover{
+    text-decoration: underline;
+    transition: 1s;
+    color: #000000;
+}
