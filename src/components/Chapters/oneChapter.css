@@ -1,18 +1,10 @@
 .container-card{
-    margin: 7rem 0rem 6rem 2rem;
-    width: 70vw;
-    
+    margin: 7rem 2rem 6rem 2rem;
+    width: 70vw;   
 }
-.div-purple1{
+.div-purple{
     background-color: #381641;
     border: 2px solid #381641;
-    width: 6rem;
-    height: 6rem;
-    transition: 0.5s;
-}
-.div-purple1:hover{
-    cursor: pointer;
-    background-color: #190020;
 }
 .list-item{
     list-style-type: none;
@@ -29,7 +21,4 @@
     color: white;
     background-color: #492d7c;
     transition: 2s;
-}
-.dv-char{
-    margin-bottom: 1rem;
 }

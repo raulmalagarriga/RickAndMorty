@@ -24,7 +24,23 @@ const getOneCharacter = async(id , setCharacter) => {
 const getAllChapters = async(setChapters , pageNumber) => {
     const request = await axios.get(`https://rickandmortyapi.com/api/episode?page=${pageNumber}`);
     setChapters(request.data.results);
-
+}
+const getDinamicChapters = async(setSearch , inputValue) => {
+    const request = await axios.get(`https://rickandmortyapi.com/api/episode/?name=${inputValue}`)
+    .catch(error => {
+        swal({
+            title: "No results found",
+            icon: "error",
+            button: "Ok",
+          });
+          console.log(error);
+    })
+    setSearch(request.data.results);
+}
+const getOneChapter = async(id , setChapter) => {
+    const request = await axios.get(`https://rickandmortyapi.com/api/episode/${id}`);
+    setChapter(request.data);
 }
 
-export {allCharacters , getDinamicCharacters , getOneCharacter , getAllChapters};
+
+export {allCharacters , getDinamicCharacters , getOneCharacter , getAllChapters , getDinamicChapters , getOneChapter};

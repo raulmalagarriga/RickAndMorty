@@ -7,7 +7,7 @@ const ChapterCard = ({
     air_date
 }) => {
     return ( 
-    <div>
+    <div className='animate__animated animate__fadeIn'>
         <div className="card text-white bg-dark mb-3 card-chapters">
             <div className="card-header">Chapter {id} </div>
             <div className="card-body">

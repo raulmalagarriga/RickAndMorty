@@ -27,13 +27,13 @@ const Characters = () => {
     const [Formvalues , handleInputChange ] = useForm(initialForm);
     const {search} = Formvalues;
     
-
+    //getCharactersOnPageLoad
     useEffect( () => {
         allCharacters(setCharacters , pageNumber);
     } , [pageNumber]);
-    // console.log(characters);
+    //getCharactersBySearchBar
     useEffect( () => {
-        getDinamicCharacters(setCharacters , search)
+        getDinamicCharacters(setCharacters , search);
     }, [search]);
 
     //Pagination

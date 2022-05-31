@@ -17,9 +17,11 @@
 .link-link{
     color: #000000;
     text-decoration: none;
+    transition: 0.5s;
+
 }
 .link-link:hover{
     text-decoration: underline;
-    transition: 1s;
+    transition: 0.5s;
     color: #fffafa;
 }

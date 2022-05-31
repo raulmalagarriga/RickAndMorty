@@ -5,7 +5,7 @@
 .btn-purple:hover{
     color: white;
     background-color: #492d7c;
-    transition: 2s;
+    transition: 0.5s;
 }
 .paginationDiv{
     margin-left: -50px;
