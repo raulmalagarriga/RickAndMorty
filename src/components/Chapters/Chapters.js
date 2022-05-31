@@ -47,16 +47,6 @@ const Chapters = () => {
             updatePageNumber(pageNumber - 1);
         }
     }
-    const selectPage1 = () =>{
-        updatePageNumber(pageNumber + 1);
-    }
-    const selectPage2 = () =>{
-        updatePageNumber(pageNumber + 2);
-    }
-    const selectPage3 = () =>{
-        updatePageNumber(pageNumber + 3);
-    }
-
     return ( 
         <div className='animate__animated animate__fadeIn'>
             <Navbar />
@@ -86,14 +76,11 @@ const Chapters = () => {
             </div>
             {
                 search === '' ? (
-                    <div className='pagination'>
+                    <div className='paginationCh'>
                             <Pagination
                             pageNumber={pageNumber}
                             prevPage={ prevPage }
                             nextPage={ nextPage }
-                            selectPage1={ selectPage1 }
-                            selectPage2={ selectPage2 }
-                            selectPage3={ selectPage3 }
                             />
                     </div>
                     ) : (
